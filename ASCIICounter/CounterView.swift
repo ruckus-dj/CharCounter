@@ -77,4 +77,10 @@ class CounterView: UIView, UITextViewDelegate, UITableViewDataSource{
         return cell;
     }
 
+    public func resizeSubviews() {
+        Text.frame = MainView.frame
+        CounterTable.frame = MainView.frame
+    }
+
+
 }

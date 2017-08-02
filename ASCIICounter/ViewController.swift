@@ -37,5 +37,10 @@ class ViewController: UIViewController {
         MainView.initialize()
     }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        MainView.resizeSubviews()
+    }
+
 
 }
